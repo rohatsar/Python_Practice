@@ -1,38 +1,43 @@
-Python Alıştırma Görevleri
+🐍 Python Learning Journey
 
-Bu depo, adım adım ilerlediğim Python öğrenme alıştırmalarını içermektedir.
-Her görev belirli bir programlama konseptine odaklanır ve problem çözme becerilerimi geliştirmeme yardımcı olur.
+Welcome to my Python Learning Repository — a collection of weekly exercises that document my progress in mastering Python programming step by step.
 
-İçerdiği Görevler
-**Öğrenci Not Takip Sistemi**
-- Sözlük ve liste kullanarak öğrenci bilgilerini saklama
-- Ortalama not hesaplama ve geçme/kalma durumunu belirleme
+Each week focuses on a new set of programming concepts, starting from the fundamentals and gradually moving toward more complex logic and problem-solving techniques.
 
-**Kelime Frekansı Analizcisi**
-- Metin içindeki kelimelerin sıklığını sayma
-- Noktalama işaretlerini kaldırma ve büyük/küçük harf farkını göz ardı etme
-- En sık kullanılan kelimeleri tespit etme
+📅 Weekly Overview
+Week	Focus Area	Key Concepts Practiced
+Week 1	Core Python Foundations	Variables, conditionals, loops, dictionaries, functions, lists
+Week 2	Control Flow & Built-in Functions	Loops, zip(), enumerate(), range(), conditionals, random module
+🧠 Learning Goals
 
-**Kullanıcı Kayıt ve Giriş Sistemi**
-- Kullanıcı adı, şifre, e-posta ve yaş bilgilerini doğrulama
-- Tüm koşullar sağlanırsa True, aksi halde False döndürme
+1-Throughout this journey, I aim to:
 
-**Temel Hesap Makinesi**
-- Toplama, çıkarma, çarpma ve bölme işlemleri
-- Sıfıra bölme hatasını kontrol etme
-- Sonuçları 2 ondalık basamağa yuvarlayarak gösterme
+2-Build a strong foundation in Python syntax and logic
 
-**Kredi Başvurusu Değerlendirmesi**
-- Yaş ve gelir bilgisine göre kredi onaylama veya reddetme
-- Her durum için bilgilendirici mesajlar gösterme
+3-Strengthen my algorithmic and analytical thinking
 
-**Akıllı Ev Sıcaklık Analizi**
-- Oda sıcaklığının konfor seviyelerini analiz etme
-- Klima ve ısıtıcı çalışma saatlerini sayma
-- Maksimum, minimum, fark ve günlük ortalama sıcaklık hesaplama
+4-Learn how to structure and modularize code effectively
 
-**Çalıştırma Talimatları**
-Her görevin Python dosyasını açarak tercih ettiğiniz Python ortamında çalıştırabilirsiniz.
-Tüm görevler birbirinden bağımsız ve kendi içinde tamamlanmıştır.
+5-Develop real-world style mini-projects to apply what I learn
 
-Bu depo, Python öğrenme serüvenimi ve sürekli gelişimimi yansıtmaktadır.
+6-Prepare for more advanced topics like OOP, APIs, and data analysis
+
+🧩 Weekly Folders
+
+📁 Week 1 — Python Practice Tasks
+→ Focus on fundamental programming skills: conditionals, loops, data handling, and basic system logic.
+
+📁 Week 2 — Python Practice Tasks
+→ Focus on deeper loop usage, control flow, and Python’s built-in functions.
+
+Each folder includes a README.md describing the exercises, goals, and how to run them.
+
+▶️ How to Run
+
+1-Navigate to the folder of the week you want to explore.
+
+2-Open the Python file for any task.
+
+3-Run it in your preferred environment (VS Code, PyCharm, or terminal).
+
+Each task is stand-alone and can be executed independently.
