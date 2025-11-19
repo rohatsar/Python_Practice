@@ -14,6 +14,10 @@ Week 3: Functional Programming & Error Handling
 
 -Key Concepts: Generators, lambda, map, filter, reduce, recursion, try-except
 
+Week 4: Advanced OOP Applications
+
+*Key Concepts: Classes, inheritance, dunder methods, file operations, composition, system-based structures
+
 🧠 Learning Goals
 Throughout this journey, I aim to:
 
@@ -40,14 +44,15 @@ Throughout this journey, I aim to:
 
 → Focus on functional programming (lambda, map), generators, recursion, and error handling.
 
-(Each folder includes a README.md describing the exercises, goals, and how to run them.) 
+📁 Week 4 — Python Practice Tasks
+→ Focus on advanced OOP concepts: class design, inheritance, dunder methods, file management, and composition-based systems.
 
 
 ▶️ How to Run
 -Navigate to the folder of the week you want to explore.
+-Open the Python file for any task
+-Run it in your preferred environment (VS Code, PyCharm, or terminal)
 
--Open the Python file for any task.
-
--Run it in your preferred environment (VS Code, PyCharm, or terminal).
 
 -Each task is stand-alone and can be executed independently.
+
