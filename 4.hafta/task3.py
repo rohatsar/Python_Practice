@@ -70,4 +70,38 @@ class DosyaYoneticisi:
         print(f"✅ {dosya_adi}, {yedek_klasoru} klasörüne yedeklendi.")
 
 
+def main():
+    # Test klasörü
+    ana_klasor = "test_klasor"
+    yedek_klasor = "yedekler"
+
+    # Klasör yoksa oluştur
+    if not os.path.exists(ana_klasor):
+        os.makedirs(ana_klasor)
+
+    yonetici = DosyaYoneticisi(ana_klasor)
+
+    # 1 - Rastgele dosya oluştur
+    dosya_adi = yonetici.dosya_olustur()
+
+    # 2 - Dosyaya biraz içerik yazalım (regex test etmek için)
+    with open(os.path.join(ana_klasor, dosya_adi), "w") as f:
+        f.write("Hello123 World456 TestABC 789 helloHELLO testTest")
+
+    # 3 - Regex ile arama yapalım
+    pattern = r"[A-Za-z]+[0-9]+"   # harf + sayı patterni örneği
+    yonetici.dosya_oku_regex(dosya_adi, pattern)
+
+    # 4 - Klasörü tara
+    yonetici.klasor_tarama()
+
+    # 5 - Dosya sayısını göster (__len__)
+    print(f"Klasördeki dosya sayısı: {len(yonetici)}")
+
+    # 6 - Dosyayı yedekle
+    yonetici.dosya_yedekle(dosya_adi, yedek_klasor)
+
+
+if __name__ == "__main__":
+    main()
 
