@@ -71,3 +71,42 @@ class Siparis:
         for urun in self.urunler:
             self.musteri.stok_guncelle(urun)
         print(f"Sipariş tamamlandı, toplam ödenecek tutar: {self.odenecek_tutar:.2f} TL")
+
+def main():
+    # Ürünleri oluşturalım
+    urun1 = Urun("Telefon", 15000, 3)
+    urun2 = Urun("Kulaklık", 500, 10)
+    urun3 = Urun("Klavye", 1200, 5)
+
+    # Müşteri oluştur
+    musteri = Musteri("Başak", "basak@example.com")
+
+    # Sepete ürün ekleyelim
+    musteri.sepet.append(urun1)
+    musteri.sepet.append(urun2)
+
+    print("\n--- Sepet Kontrolü ---")
+    print("Telefon sepette mi?", urun1 in musteri)
+    print("Klavye sepette mi?", urun3 in musteri)
+
+    # Sipariş oluştur
+    siparis = Siparis(musteri, musteri.sepet)
+
+    # Ödeme yap
+    print("\n--- Ödeme ve Stok Güncelleme ---")
+    siparis.odeme_yap()
+
+    # Sipariş geçmişi
+    print("\n--- Sipariş Geçmişi ---")
+    for urun in musteri.siparis_gecmisi:
+        print(f"{urun.isim} satın alındı, kalan stok: {urun.stok}")
+
+    # Sipariş Özeti
+    print("\n--- Sipariş Özeti ---")
+    print(f"Sipariş No: {siparis.siparis_no}")
+    print(f"Sipariş Tarihi: {siparis.siparis_tarihi}")
+    print(f"Toplam Tutar (KDV Dahil): {siparis.odenecek_tutar:.2f} TL")
+
+
+if __name__ == "__main__":
+    main()
