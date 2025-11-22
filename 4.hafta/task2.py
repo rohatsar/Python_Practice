@@ -85,3 +85,34 @@ class YuksekLisansOgrencisi(Ogrenci):
 
         not_ortalama = sum(not_listesi) / len(not_listesi)
         return math.floor(not_ortalama)
+
+def main():
+    print("=== Öğrenci Not Sistemi Test ===")
+
+    # Öğrenciler
+    ogr1 = Ogrenci("Ali", "Yılmaz", 123)
+    lisans1 = LisansOgrencisi("Ayşe", "Demir", 456)
+    yuksek1 = YuksekLisansOgrencisi("Mehmet", "Kara", 789)
+
+    # NOT EKLEME
+    print("\n--- Not Ekleme ---")
+    ogr1.not_ekle("Matematik", [85, 90, 78])
+    lisans1.not_ekle("Fizik", [70, 80])
+    yuksek1.not_ekle("Yazılım", [90, 95, 85])
+
+    # ORTALAMA HESAPLAMA
+    print("\n--- Ortalama Hesaplama ---")
+
+    print(f"Ali - Matematik ortalama: {ogr1.ortalama_hesaplama('Matematik')}")
+    print(f"Ayşe (Lisans) - Fizik ortalama: {lisans1.ortalama_hesaplama('Fizik')}")
+    print(f"Mehmet (Yüksek Lisans) - Yazılım ortalama: {yuksek1.ortalama_hesaplama('Yazılım')}")
+
+    # Aynı derse tekrar not ekleme testi
+    print("\n--- Ek Not Ekleme (Counter Test) ---")
+    ogr1.not_ekle("Matematik", [85, 100])  # tekrar ekleniyor
+
+    print(f"Ali - Matematik yeni ortalama: {ogr1.ortalama_hesaplama('Matematik')}")
+
+
+if __name__ == "__main__":
+    main()
